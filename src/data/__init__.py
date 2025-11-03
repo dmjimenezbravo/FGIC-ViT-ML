@@ -10,6 +10,8 @@ image classification datasets, including:
 - Stanford Cars
 - Oxford 102 Flowers
 - NABirds
+
+It also includes utilities for loading and visualizing the processed datasets.
 """
 
 from .cub200_dataset import process_dataset as process_cub200_dataset
@@ -24,6 +26,10 @@ from .utils_visualization import (
     count_images,
     plot_image_counts
 )
+from .dataset_loader import (
+    get_image_paths_and_labels,
+    load_datasets
+)
 
 __all__ = [
     # Dataset processors
@@ -33,6 +39,10 @@ __all__ = [
     'process_cars_dataset',
     'process_flowers_dataset',
     'process_nabirds_dataset',
+    
+    # Dataset loading utilities
+    'get_image_paths_and_labels',
+    'load_datasets',
     
     # Visualization utilities
     'count_elements_in_subdirs',
