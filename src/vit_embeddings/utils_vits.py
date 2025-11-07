@@ -57,9 +57,9 @@ def get_model_configs() -> Dict[str, Dict[str, Any]]:
         },
         'CLIP': {
             'name': 'CLIP',
-            'description': 'OpenAI CLIP ViT-B/32 model',
+            'description': 'OpenAI CLIP ViT-B/16 model',
             'embedding_dim': 512,
-            'model_id': 'ViT-B/32',
+            'model_id': 'ViT-B/16',
             'image_size': 224,
             'preprocessing': 'clip_default'  # CLIP uses its own preprocessing
         },
